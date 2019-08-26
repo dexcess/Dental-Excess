@@ -1,0 +1,151 @@
+/* main index page body style */
+.main-container {
+  font-family: "Lato", sans-serif;  
+  font-weight: 300;
+  height:98%;
+  width: 98%;
+  background-image: url('images/background.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* supply page body style */
+.supply-container {
+  font-family: "Lato", sans-serif;  
+  font-weight: 300;
+  height:98%;
+  width: 98%;
+  background-image: url('images/supplies.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* supply page body style */
+.equipment-container {
+  font-family: "Lato", sans-serif;  
+  font-weight: 300;
+  height:98%;
+  width: 98%;
+  background-image: url('images/equipment.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* H1 styling to header */
+.title {
+  color: white;
+  background-color: teal;
+  text-align: center;
+  display: block;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* button styles - START */
+.button-default {
+  color: white;
+  background-color: teal;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  margin: 10px;
+  display: inline-block;
+  width: 33%;
+  height: 50%;
+}
+
+.button-slanted {
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg); 
+  float: right;
+}
+/* end of button styles */
+
+/* Forced new line clearings */
+.new-line {
+  display: block;
+  clear: both;
+}
+
+ /* Change the color and appearances for hyperlinks - START */
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+/* a:hover {
+  text-decoration: underline;
+  color: black;
+  background-color: white;
+  } */
+  
+a:hover .button-default {
+  text-decoration: underline;
+  color: black;
+  background-color: white;
+  border: solid black;
+  }
+
+
+a:active {
+  text-decoration: underline;
+}
+ /* End changes to hyperlinks */	
+
+.footer {
+  color: white;
+  background-color: black;
+  display: block;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 75%;
+  text-align:justify;
+}
+
+.footer p {
+  padding: 2%;
+}
+
+@media screen and (max-width:719px)
+{
+/* Code for smaller screens */
+
+.main-container {
+   background-image: url('images/background2.jpg'); 	
+}
+
+/* supply page body style */
+.supply-container {
+  background-image: url('images/supplies2.jpg'); 
+
+}
+
+/* supply page body style */
+.equipment-container {
+  background-image: url('images/equipment2.jpg'); 
+}
+/* button styles - START */
+.button-default {
+  width: 90%;
+  height: 50%;
+}
+
+.button-slanted {
+  -ms-transform: skewX(-0deg);
+  -webkit-transform: skewX(-0deg);
+  transform: skewX(-0deg); 
+
+}
+/* end of button styles */
+	
+	
+}
