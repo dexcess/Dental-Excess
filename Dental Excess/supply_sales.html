@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>Supply Sales</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css" type="text/css"/>
+</head>
+<body class="sales-container">
+<div class="selling-image">
+    <img class="cash-image" src="images/cash.jpg"" alt="Cash For Excess">
+</div>
+<div class="title">
+    <h1>SUPPLY SALES INFORMATION</h1>
+</div>
+<br>
+<form action="/selling_page.php" method="post">
+<input name="salesSelector" type="hidden" value="2">
+<div class="item_text">
+    Supply Type:  <select name="supply_type">
+      <option value="articulating">Articulating Products</option>
+      <option value="bleach">Bleach and Whitening</option>
+      <option value="burs">Burs and Diamonds</option>
+      <option value="cad">CAD/CAM</option>
+      <option value="cements">Cements</option>
+      <option value="disposables">Disposables</option>
+      <option value="endo">Endodontic</option>
+      <option value="evac">Evacuation</option>
+      <option value="polish">Finish and Polishing</option>
+      <option value="handpiece">Hand Piece</option>
+      <option value="impression">Impression Material</option>
+      <option value="infection">Infection Control</option>
+      <option value="instruments">Instruments</option>      
+      <option value="laboratory">Laboratory Products</option>
+      <option value="matrix">Matrix Materials</option> 
+      <option value="ortho">Orthodontic</option>
+      <option value="services">Services</option>
+      <option value="surgical">Surgical</option>
+      <option value="xray">X-Ray Products</option>
+      <option value="other">Miscellanous Products</option>
+    </select>
+</div>
+<br>
+<div class="item_text">
+    Item:
+    <input name="supply_item" type="text">
+</div>
+<br>
+<div class="item_text">Description:
+</div> 
+<br>
+<div class="item_textbox">
+    <textarea name="supply_description" rows="10" cols="30">
+Supply Description.  
+Must have at least 4 months of product life left.
+    </textarea>
+</div>
+<br>
+<div class="item_text">
+    Expiration Date:
+    <input name="supply_expiration" type="text">
+</div>
+<br>
+<div class="item_text">
+    Condition: 
+</div>
+<div class="item_textbox">
+    <input type="radio" name="supply_conditon" value="new"> New
+    <input type="radio" name="supply_conditon" value="used"> Used - Explain in Description
+</div>
+<br>
+<div class="item_text">
+    Upload Picture: <input type="file" name="supply_pic" accept="image/*">
+</div>
+<br>
+<div class="item_text">
+    Quantity Available: <input name="supply_quantity" type="text">
+</div>
+<br>
+<div class="item_text>
+    Selling Price: <input name="supply_price" type="text">
+</div>
+<br>
+<div class="item_text">
+    Shipping Cost: <input name="supply_shipping" type="text">
+    <input type="radio" name="supply_free_shipping" value="free_shipping"> Free Shipping
+</div>
+<br>
+<div class="item_text">
+    Posting Fee: <input name="supply_fee" type="text" readonly>
+</div>
+<br>
+<br>
+<div class="item_submit">
+    <input type="submit">
+</div>
+</form>
+</body>
+
+</html>

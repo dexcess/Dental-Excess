@@ -2,8 +2,8 @@
 .main-container {
   font-family: "Lato", sans-serif;  
   font-weight: 300;
-  height:98%;
-  width: 98%;
+  height:100%;
+  width: 100%;
   background-image: url('images/background.jpg'); 
   background-size: cover;
   background-repeat: no-repeat;
@@ -30,6 +30,33 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+/* main encapsulation div for items displayed to user */
+.item-container {
+ 
+  width: 98%;
+  border-style: solid;
+}
+
+/* image container for user display */
+.item-image {
+   width: 30%;
+   float: left;
+}
+
+/* image container for display buttons*/
+.item-buttons {
+   width: 25%;
+   float: left;
+
+}
+
+/* description of item displayed to end user */
+.item-description {
+   width: 40%
+   float: left;
+}
+
 
 
 /* H1 styling to header */
@@ -115,13 +142,52 @@ a:active {
   padding: 2%;
 }
 
-@media screen and (max-width:719px)
-{
+/* image in both equipment and supplies selling pages */
+
+.sales-container {
+  font-family: "Lato", sans-serif;  
+  font-weight: 300;
+  height:98%;
+  width: 98%;
+
+}
+
+.cash-image {
+  display: block;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  align: center;
+}
+
+.item_text {
+ 
+  display: block;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  align: center;
+}
+
+.item_textbox {
+ 
+  display: block;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  align: center;
+}     
+
+/* ------------Separation CSS code for smaller screens */
+
+
+@media screen and (max-width:719px) {
 /* Code for smaller screens */
 
 .main-container {
    background-image: url('images/background2.jpg'); 	
 }
+
 
 /* supply page body style */
 .supply-container {

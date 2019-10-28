@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Equipment Sales</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+	
+</head>
+<body class="sales-container">
+<div class="selling-image">
+    <img class="cash-image" src="images/cash.jpg"" alt="Cash For Excess">
+</div>
+<div class="title">
+    <h1>EQUIPMENT SALES INFORMATION</h1>
+</div>
+<br>
+<form action="/selling_page.php" method="post">
+<input name="salesSelector" type="hidden" value="1">
+<div class="item_text">
+    Equipment Type:  <select name="equipment_type">
+      <option value="cad">CAD/CAM</option>
+      <option value="camera">Camera</option>
+      <option value="chair">Chair</option>
+      <option value="digital">Digital</option>
+      <option value="handpiece">Hand Piece</option>
+      <option value="laser">Laser</option>
+      <option value="light">Light</option>
+      <option value="scaler">Scaler</option>
+      <option value="scanner">Scanner</option>
+      <option value="sterilizer">Sterilizer</option>
+      <option value="stool">Stool</option>
+      <option value="ultrasonic">Ultrasonic</option>
+      <option value="xray">X-Ray</option>
+      <option value="other">Other</option>
+    </select>
+</div>
+<br>
+<div class="item_text">
+    Item:
+    <input name="equipment_item" type="text">
+</div>
+<br>
+<div class="item_text">Description: 
+</div>
+<br>
+<div class="item_textbox">
+    <textarea name="equipment_description" rows="10" cols="30">
+    Equipment Description.
+    </textarea>
+</div>
+<br>
+<div class="item_text">
+    Condition: 
+</div>
+<div class="item_textbox">
+    <input type="radio" name="equipment_conditon" value="new"> New
+    <input type="radio" name="equipment_conditon" value="used"> Used/Working
+    <input type="radio" name="equipment_conditon" value="broken"> Broken
+</div>
+<br>
+<div class="item_text">
+    Upload Picture: <input type="file" name="equipment_pic" accept="image/*">
+</div>
+<br>
+<div class="item_text">
+    Quantity Available: <input name="equipment_quantity" type="text">
+</div>
+<br>
+<div class="item_text">
+    Selling Price: <input name="equipment_price" type="text">
+</div>
+<br>
+<div class="item_text">
+    Shipping Cost: <input name="equipment_shipping" type="text">
+    <input type="radio" name="equipment_free_shipping" value="free_shipping"> Free Shipping
+</div>
+<br>
+<div class="item_text">
+    Posting Fee: <input name="equipment_fee" type="text" readonly>
+</div>
+<br>
+<br>
+<div class="item_submit">
+    <input type="submit">
+</div>
+</form>
+</body>
+
+</html>
